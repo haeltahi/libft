@@ -2,15 +2,15 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned	int i;
+	size_t	i;
 	i = 0;
-	int lendest;
+	size_t lendest;
 	lendest= 0;
 	while(dest[lendest])
 	{
 		lendest++;
 	}
-	while(src[i] && i < size)
+	while(src[i] && i < size - 1)
 	{
 		dest[lendest++] = src[i++];
 	}

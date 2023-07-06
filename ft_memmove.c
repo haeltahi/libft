@@ -8,10 +8,6 @@ void* ft_memmove(void *dst, const void *src, size_t len)
 	i =0 ;
 	char *temp;
 	temp =(char *)malloc (sizeof (char) *(len));
-		// if(static_cast<size_t>(temp[i]) == len)
-		// {
-		// 	return NULL;
-		// }
 	while(i < len)
 	{
 		
@@ -30,9 +26,3 @@ void* ft_memmove(void *dst, const void *src, size_t len)
 	return (dstp);
 	
 }
-// int main()
-// {
-// char src[] = "abcde";
-	
-// 	printf("%s\n",ft_memmove(src+2,src,3));
-// }
